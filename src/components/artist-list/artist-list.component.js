@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ReactTable from "react-table";
-import "react-table/react-table.css";
 import Artist from '../artist/artist.component';
 
 import './artist-list.styles.css';

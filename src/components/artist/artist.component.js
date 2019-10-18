@@ -4,8 +4,6 @@ import './artist.styles.css';
 import "react-table/react-table.css";
 
 const Artist = ({ artists }) => {
-  const {name, email, phone} = artists;
-  console.log('**********', artists);
   const columns = [
     {
       Header: 'Name',
@@ -21,10 +19,10 @@ const Artist = ({ artists }) => {
     }
 ]
 
-  return <ReactTable
-    artists={artists}
+  return (<ReactTable
+    data={artists}
     columns={columns}
-  />
+  />)
 }
 
 export default Artist;
