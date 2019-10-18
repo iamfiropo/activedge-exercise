@@ -10,8 +10,17 @@ const Artist = ({ artists }) => {
       accessor: 'name'
     },
     {
+      Header: 'UserName',
+      accessor: 'username'
+    },
+    {
       Header: 'Email',
       accessor: 'email'
+    },
+    {
+      id: 'artistAddress',
+      Header: 'Address',
+      accessor: add => add.address.street + ' ' + add.address.suite + ' ' + add.address.city,
     },
     {
       Header: 'Phone',
